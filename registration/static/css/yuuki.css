@@ -9,8 +9,6 @@
     padding-top: 2%;
 **/
 
-    background: url('../img/2017/Logo-promo.png') no-repeat top right;
-    min-height: 900px;  /* So logo isn't cut off on short-content pages */
 
 }
 .artisan2 {
@@ -18,12 +16,7 @@
 }
 
 body {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e60000+0,640000+100 */
-background: #e60000; /* Old browsers */
-background: -moz-linear-gradient(top, #e60000 0%, #640000 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #e60000 0%,#640000 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #e60000 0%,#640000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60000', endColorstr='#640000',GradientType=0 ); /* IE6-9 */
+background-color: #518bc7;
 }
 
 .containter {
@@ -33,7 +26,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60000', end
 #content-holder {
     background: white;
     padding: 3%;
-    border: #e60000 5px solid;
+    border: #f1d600 3px solid;
 }
 
 #content{

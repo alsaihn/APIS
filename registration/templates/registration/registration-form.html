@@ -49,12 +49,6 @@
                     </div>
                     
                 </div>
-                <div class="form-group">
-                    <label for="firstName" class="col-sm-3 control-label">ASL Interpreters <span style="color:red;"></span></label>
-                    <div class="col-sm-9">
-                        <input type="checkbox" id="asl" /> <span class="control-label" >Please check this box if you need the services of our interpreters. This will help us determine how many we will need at the convention.</span>
-                    </div>
-                </div>
 		<hr/>
 		<div class="row" id="levelContainer"></div>
 		<br/>
@@ -63,7 +57,9 @@
                     <div>
                         <label>
                             <input type="checkbox" id="agreeToRules" name="agreeToRules" class="form-control-checkbox" required>
-			I agree to abide by Furthemore's <a href="http://www.furthemore.org/policies/code-of-conduct/" target="_blank">Code of Conduct</a>.
+			I agree to abide by the Furst State <a 
+href="http://thefurststate.com/index.php/about/code-of-conduct" target="_blank">Code 
+of Conduct</a>.
                         </label>
                     </div>
 		    <div class="col-sm-offset-3 help-block with-errors"style=" padding-left:15px;"></div>
@@ -319,7 +315,12 @@
                 if ($(option).is(':checked')) {
                     data.push({'id': option.id.split('_')[1], 'value': $(option).is(':checked')});
                 }
-            } else {
+            } else if ($(option).is('select')) {
+		if ($(option).val() != ""){
+                    data.push({'id': option.id.split('_')[1], 'value': 
+$(option).val()});
+		}
+	    } else {
                 data.push({'id': option.id.split('_')[1], 'value': $(option).val()});
             }
         });
@@ -359,7 +360,7 @@
                 'phone': $("#phone").val(), 'email': $("#email").val(), 'birthdate': $("#birthDate").val(),
                 'badgeName': $("#badgeName").val(), 'emailsOk': $("#contact").is(':checked'), 
                 'volDepts': $("#volunteer").val(), 'surveyOk': $("#survey").is(':checked'),
-                'asl': $("#asl").is(':checked'),
+                'asl': false,
             }, 
             'priceLevel': { 'id': $(".selectLevel")[0].id.split('_')[1], 'options': getOptions() },
             'event': '{{event}}'
