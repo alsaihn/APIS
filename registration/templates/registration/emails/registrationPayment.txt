@@ -42,9 +42,6 @@ consent form for all minor attendees. Any attendee under the age of 13 (by the s
 must have a parent or guardian also register and accompany them during the event.
 {% endif %}
 
-If you have any questions about your order, please contact us at registration@furthemore.org.
+If you have any questions about your order, please contact us at registration@thefurststate.org.
 
 Thank you! 
-
-Nalan
-Head of Registration
