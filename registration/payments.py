@@ -41,6 +41,7 @@ def chargePayment(orderId, ccData, ipAddress):
     print(body)
 
     api_instance = TransactionsApi()
+    api_instance.api_client.configuration.access_token = settings.SQUARE_ACCESS_TOKEN;
     api_response = api_instance.charge(settings.SQUARE_LOCATION_ID, body)
 
     print("---- Charge Submitted ----")
