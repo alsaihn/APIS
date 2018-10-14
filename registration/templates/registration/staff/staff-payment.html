@@ -13,7 +13,7 @@
       </div>
       <div class="modal-body">
     	<p>Staff must be over the age of 18.</p>
-	    <p>Please contact <a href="mailto:registration@furthemore.org">registration@furthemore.org</a> if you have any questions.</p>
+	    <p>Please contact <a href="mailto:registration@thefurststate.com">registration@thefurststate.com</a> if you have any questions.</p>
       </div>
     </div>
   </div>
@@ -29,9 +29,8 @@
 	<div role="tabpanel" class="tab-pane fade in active" id="personal">
 		<h1>Staff Registration - {{event}}</h1>
 
-		<p>Please review and update the information below. If you have any questions about this form, please contact <a href='mailto:registration@furthemore.org'>registration@furthemore.org</a>. Required fields are marked with a red asterisk (<span style="color:red;">*</span>)</p>
+		<p>Please review and update the information below. If you have any questions about this form, please contact <a href='mailto:registration@thefurststate.com'>registration@thefurststate.com</a>. Required fields are marked with a red asterisk (<span style="color:red;">*</span>)</p>
 
-		<hr>
 			
         {% show_attendee_form staff.attendee %}
 
@@ -47,7 +46,7 @@
             <div class="form-group">
                 <div class="col-sm-12">
                     <input type="checkbox" id="agreeToRules" name="agreeToRules" class="form-control form-control-checkbox" required />
-			        I agree to abide by Furthemore's Code of Conduct.
+			        I agree to abide by The Furst State's <a href="http://thefurststate.com/index.php/about/code-of-conduct" target="_blank">Code of Conduct</a>.
                 </div>
 		        <div class="col-sm-offset-1 help-block with-errors"style=" padding-left:15px;"></div>
 		    </div>
@@ -141,7 +140,7 @@
 			    if (result.responseText == "") {
 				    alert("Your session has expired.");
 			    } else {
-                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact registration@furthemore.org for assistence.")
+                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact registration@thefurststate.com for assistence.")
 			    }
 			    $("#register").removeAttr("disabled");
 		    },
@@ -150,7 +149,7 @@
                 {
  	                window.location = "{% url 'cart' %}";
 			    } else {
-                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact registration@furthemore.org for assistence.")
+                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact registration@thefurststate.com for assistence.")
 			    }
 			    $("#register").removeAttr("disabled");
             }

@@ -2,7 +2,7 @@
 
 <h3>Convention Info</h3>
 {% if staff %}
-<p>If your department and/or title are not correct, contact the Staff Services department to have it corrected.</p>
+<p>If your department and/or title are not correct, contact registration@thefurststate.com to have it corrected after you register.</p>
 {% endif %}
 
 <div class="form-group">
@@ -39,6 +39,8 @@
         </select>
     </div>
     <div class="col-sm-offset-3 help-block with-errors"style=" padding-left:15px;"></div>
+    <div class="col-sm-9 col-sm-offset-3 small">This is for your staff shirt. If you'd like to purchase 
+an additional shirt, select the appropriate option in the badge level area below.</div>
 </div>
 
 <hr/>
@@ -92,6 +94,9 @@
         <input type="text" id="medical" name="medical" value="{{staff.specialMedical}}" class="form-control form-control-text" required />
     </div>
     <div class="col-sm-offset-3 help-block with-errors"style=" padding-left:15px;"></div>
+    <div class="col-sm-9 col-sm-offset-3 small"><b>CONFIDENTIAL</b> Let us know about any alergies or 
+         conditions that may affect your ability to staff the event. Enter none if this is not applicable.
+    </div>
 </div>
 
 <div class="form-group">
@@ -100,6 +105,9 @@
         <input type="text" id="food" name="food" value="{{staff.specialFood}}" class="form-control form-control-text" required />
     </div>
     <div class="col-sm-offset-3 help-block with-errors"style=" padding-left:15px;"></div>
+    <div class="col-sm-9 col-sm-offset-3 small"><b>CONFIDENTIAL</b> Let us know about any alergies or 
+         dietary restrictions you have. Enter none if this is not applicable.
+    </div>
 </div>
 
 <div class="form-group">
@@ -108,6 +116,7 @@
         <input type="text" id="skills" name="skills" value="{{staff.specialSkills}}" class="form-control form-control-text" required />
     </div>
     <div class="col-sm-offset-3 help-block with-errors"style=" padding-left:15px;"></div>
+    <div class="col-sm-9 col-sm-offset-3 small"> Enter none if this is not applicable.</div>
 </div>
 
 

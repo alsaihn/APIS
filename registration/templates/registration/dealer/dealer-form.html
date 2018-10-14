@@ -27,13 +27,6 @@
 
              {% show_attendee_form emailOptions=True %}
 
-            <div class="form-group">
-                    <label for="far" class="col-sm-3 control-label">Badge Name</label>
-                    <div class="col-sm-9">
-                        <input type="text" id="badgename" name="badgename" placeholder="Badge Name" class="form-control form-control-text" />
-                    </div>
-            </div>
-
         <p>&nbsp;</p>            
         <h2>Business Information</h2>
         <p>Fill out the information related to your business below.</p>
@@ -253,7 +246,7 @@
                 'state': $("#state").val(), 'country': $("#country").val(), 'postal': $("#zip").val(),
                 'phone': $("#phone").val(), 'email': $("#email").val(), 'birthdate': $("#birthDate").val(),
                 'emailsOk': $("#contact").is(':checked'), 'surveyOk': $("#survey").is(':checked'), 
-                'badgeName': $("#badgename").val()
+                'badgeName': ""
             }, 
             'dealer': {
                 'businessName':$("#businessName").val(), 'website':$("#website").val(), 'logo':$("#logo").val(),

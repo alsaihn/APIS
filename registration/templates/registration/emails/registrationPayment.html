@@ -2,8 +2,7 @@
 
 <hr/>
 {% for oi, options in orderItems.items %}
-  <p>Badge Name - {{oi.badge.badgeName}}<br/>
-     Level - {{oi.priceLevel.name}} <br/>
+  <p>Badge Level - {{oi.priceLevel.name}} <br/>
      Price - ${{oi.priceLevel.basePrice}}
   {% for ao in options %}
     {% if ao.option.optionExtraType == 'int' %}
@@ -16,7 +15,8 @@
     <br>** This person qualifies for our VIP experience. Please complete your hotel reservation and email
        your hotel confirmation code to guests@furthemore.org. Our VIP department has also been notified
        of your registration and should be contacting you directly with more information. If you have
-       questions regarding perks please contact guests@furthemore.org. Thank you for your support!
+       questions regarding perks please contact registration@thefurststate.com Thank you for your 
+support!
   {% endif %}
   </p>
 {% endfor %}
@@ -46,7 +46,12 @@ must have a parent or guardian also register and accompany them during the event
 </p>
 {% endif %}
 
-<p>If you have any questions about your order, please contact us at registration@thefurststate.org.</p>
+<p>If you have any questions about your order, please contact us at 
+<a href="mailto:registration@thefurststate.com">registration@thefurststate.com</a>.</p>
+
+<p>Your event hotel reservation link: is <a href="https://embassysuites.hilton.com/en/es/groups/personalized/N/NEWDEES-FUR-20181230/index.jhtml?WT.mc_id=POG">Book Room</a>
+</br>This special room rate will be available until November 30th or until the group block is sold-out, whichever comes first.
+</p>
 
 <p>Thank you!</p>
 

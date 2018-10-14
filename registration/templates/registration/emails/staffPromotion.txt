@@ -1,2 +1,8 @@
-Welcome to Furthemore Staff! 
-Use this link to register as staff: https://www.furthemore.org/apis/registration/staff/{{registrationToken}}
+Welcome to NYFB staff
+
+Use this link to register as staff:
+https://reg.thefurststate.com/registration/staff/{{registrationToken}}
+
+On the first page of the registration process, you must enter the email address at which you 
+received this email. If you'd like a different email as your primary contact, you may change it on 
+the second page of the registration process.

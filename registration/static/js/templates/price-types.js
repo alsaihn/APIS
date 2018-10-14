@@ -5,7 +5,7 @@ var shirtSizes = [];
 
 $( "body" ).ready(function() {
 
-        $.getJSON("/apis/registration/pricelevels", function(data) {
+        $.getJSON("/registration/pricelevels", function(data) {
             levelData = data;
             $.each( data, function( key, val ) {
                 var price = val.base_price;
@@ -22,7 +22,7 @@ $( "body" ).ready(function() {
             
         });
 
-        $.getJSON("/apis/registration/shirts", function(data) {
+        $.getJSON("/registration/shirts", function(data) {
             shirtSizes = data;
         });
 
@@ -140,7 +140,9 @@ $( "body" ).ready(function() {
                     data.push({'id': option.id.split('_')[1], 'value': $(option).val()});
                 }            
             } else {
-                data.push({'id': option.id.split('_')[1], 'value': $(option).val()});
+                if ($(option).val() != "" | $(option).val() != "0") {
+                    data.push({'id': option.id.split('_')[1], 'value': $(option).val()});
+                }
             }
         });
         return data;

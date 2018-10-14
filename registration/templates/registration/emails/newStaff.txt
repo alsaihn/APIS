@@ -1,5 +1,7 @@
-Welcome to Furthemore Staff! 
-If you have already registered as an attendee, do not use this form. Contact staff services to get a link to the correct registration form.
-Use this link to register as staff: https://www.furthemore.org/apis/registration/newstaff/{{registrationToken}}
+Welcome to NYFB staff
 
-Signature
+Use this link to register as staff: 
+https://reg.thefurststate.com/registration/newstaff/{{registrationToken}}
+
+The above link is valid for a single use and will be marked as invalid once you click the Checkout 
+button. If you need a new link, contact registration@thefurststate.com.

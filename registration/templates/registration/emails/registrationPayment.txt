@@ -1,47 +1,59 @@
-Thank you for your payment.
+Thank you for your payment. 
 
----------------------------------
-{% for oi, options in orderItemsitems %}
-  Badge Name - {{oi.badge.badgeName}} 
-  Level      - {{oi.priceLevel.name}} 
-  Price      - ${{oi.priceLevel.subtotal}}
+-----------------------------------------------------
+{% for oi, options in orderItems.items %}
+     Badge Level - {{oi.priceLevel.name}}
+     Price - ${{oi.priceLevel.basePrice}}
   {% for ao in options %}
-    {% if ao.option.optionExtraType == 'int'%}
-    Option: {{ao.option.optionName}} x{{ao.optionValue}} - ${{ao.getTotal}}
+    {% if ao.option.optionExtraType == 'int' %}
+         Option: {{ao.option.optionName}} x{{ao.optionValue}} - ${{ao.getTotal}}
     {% else %}
-    Option: {{ao.option.optionName}} - ${{ao.option.optionPrice}}
+         Option: {{ao.option.optionName}} - ${{ao.option.optionPrice}}
     {% endif %}
   {% endfor %}
   {% if oi.priceLevel.emailVip %}
-    ** This person qualifies for our VIP experience. Please complete your hotel reservation and email 
+
+    ** This person qualifies for our VIP experience. Please complete your hotel reservation and email
        your hotel confirmation code to guests@furthemore.org. Our VIP department has also been notified
-       of your registration and should be contacting you directly with more information. If you have 
-       questions regarding perks please contact guests@furthemore.org. Thank you for your support!
+       of your registration and should be contacting you directly with more information. If you have
+       questions regarding perks please contact registration@thefurststate.com Thank you for your support!
+
   {% endif %}
 
 {% endfor %}
 
 {% if order.discount %}
-  Discount:
+  Discount: 
       {% if order.discount.percentOff %}
           {{order.discount.percentOff}}% off
       {% else %}
           ${{order.discount.amountOff}} off
       {% endif %}
+  
 {% endif %}
   Total: {{order.total}}
   Paid On: {{order.settledDate}}
----------------------------------
 
-Your payment confirmation is: {{reference}}
+  Your payment confirmation number is: {{reference}}
+
+-----------------------------------------------------
 
 {% if hasMinors %}
-One or more of the attendees in this order will still be minors at the start of {{event}}.
-Please note that we require a parent or guardian to be present at registration to sign our
-consent form for all minor attendees. Any attendee under the age of 13 (by the start of the convention)
-must have a parent or guardian also register and accompany them during the event.
+**One or more of the attendees in this order will still be minors at the start of {{event}}.
+  Please note that we require a parent or guardian to be present at registration to sign our
+  consent form for all minor attendees. Any attendee under the age of 13 (by the start of the convention)
+  must have a parent or guardian also register and accompany them during the event. 
 {% endif %}
 
-If you have any questions about your order, please contact us at registration@thefurststate.org.
+If you have any questions about your order, please contact us at registration@thefurststate.com.
 
-Thank you! 
+
+Your event hotel reservation link is:
+
+https://embassysuites.hilton.com/en/es/groups/personalized/N/NEWDEES-FUR-20181230/index.jhtml?WT.mc_id=POG
+
+This special room rate will be available until November 30th or until the group block is sold-out, whichever comes first.
+
+
+Thank you!
+
