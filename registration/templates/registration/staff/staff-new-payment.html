@@ -13,7 +13,7 @@
       </div>
       <div class="modal-body">
     	<p>Staff must be over the age of 18.</p>
-	    <p>Please contact <a href="mailto:registration@thefurststate.com">registration@thefurststate.com</a> if you have any questions.</p>
+	    <p>Please contact <a href="mailto:staffreg@thefurststate.com">staffreg@thefurststate.com</a> if you have any questions.</p>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
 		<h1>New Staff Registration <br/>{{event}}</h1>
 
 		<p>Please review and update the information below. If you have any questions about this 
-                   form, please contact <a href='mailto:registration@thefurststate.com'>registration@thefurststate.com</a>. 
+                   form, please contact <a href='mailto:staffreg@thefurststate.com'>staffreg@thefurststate.com</a>. 
                    Required fields are marked with a red asterisk (<span style="color:red;">*</span>)</p>
 
         {% show_attendee_form %}
@@ -136,7 +136,7 @@
 			    if (result.responseText == "") {
 				    alert("Your session has expired.");
 			    } else {
-                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact registration@furthemore.org for assistence.")
+                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact staffreg@furthemore.org for assistence.")
 			    }
 			    $("#register").removeAttr("disabled");
 		    },
@@ -145,7 +145,7 @@
                 {
  	                window.location = "{% url 'cart' %}";
 			    } else {
-                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact registration@furthemore.org for assistence.")
+                    alert("An error has occurred. Please check the form for any error messages. If this error continues, please contact staffreg@furthemore.org for assistence.")
 			    }
 			    $("#register").removeAttr("disabled");
             }
